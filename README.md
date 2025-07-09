@@ -115,10 +115,10 @@ kubectl delete service SERVICE_NAME -n NAMESPACE</code></pre>
 helm repo update</code></pre>
 
 ### Search charts in repo
-<pre><code>helm search repo CHART</code></pre>
+<pre><code>helm search repo CHART_NAME</code></pre>
 
 ### Show default values
-<pre><code>helm show values CHART</code></pre>
+<pre><code>helm show values CHART_NAME</code></pre>
 
 ### List deployed helm releases
 <pre><code>helm list</code></pre>
