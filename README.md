@@ -1,7 +1,7 @@
 # kubernetes-training
 
 ## List resources in current namespace
-kubectl get nodes  
+<pre><code>kubectl get nodes  
 kubectl get namespaces  
 kubectl get pods  
 kubectl get deployments  
@@ -10,7 +10,7 @@ kubectl get configmaps
 kubectl get secrets  
 kubectl get persistentvolumes  
 kubectl get persistentvolumeclaims  
-kubectl get all
+kubectl get all</code></pre>
 
 ## List resources in selected namespace
-kubectl get pods -n schulungXXhome
+<pre><code>kubectl get pods -n schulungXXhome</code></pre>
