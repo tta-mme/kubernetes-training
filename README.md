@@ -30,7 +30,8 @@ kubectl get configmap CONFIGMAP_NAME -o yaml</code></pre>
 kubectl describe deployment DEPLOYMENT_NAME</code></pre>
 
 ## View logs
-<pre><code>kubectl logs POD_ID 
+<pre><code>kubectl logs POD_ID  
+kubectl logs POD_ID  CONTAINER_NAME
 kubectl logs POD_ID --tail=10  
 kubectl logs POD_ID -f</code></pre>
 
