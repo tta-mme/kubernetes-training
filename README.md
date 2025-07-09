@@ -58,8 +58,10 @@ kubectl port-forward service/SERVICE_NAME -n NAMESPACE 8080:80</code></pre>
 <pre><code>kubectl run POD_NAME --image=IMAGE_NAME  
 kubectl create deployment DEPLOYMENT_NAME --image=IMAGE_NAME  
 kubectl create secret generic SECRET_NAME --from-literal=KEY_1=VALUE_1 --from-literal=KEY_2=VALUE_2  
-kubectl create configmap CONFIGMAP_NAME --from-literal=KEY_1=VALUE_1 --from-literal=KEY_2=VALUE_2  
-kubectl apply -f FILENAME</code></pre>
+kubectl create configmap CONFIGMAP_NAME --from-literal=KEY_1=VALUE_1 --from-literal=KEY_2=VALUE_2</code></pre>
+
+## Create resources declarative
+<pre><code>kubectl apply -f YAML_FILE</code></pre>
 
 ## Delete resources
 <pre><code>kubectl delete pod POD_ID -n NAMESPACE  
