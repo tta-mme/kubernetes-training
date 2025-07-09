@@ -17,6 +17,10 @@ kubectl get all</code></pre>
 kubectl get pods -n NAMESPACE -w  
 kubectl get deployments -n NAMESPACE</code></pre>
 
+## List resources with more details
+<pre><code>kubectl get nodes -o wide  
+kubectl get pods -o wide</code></pre>
+
 ## Output as yaml
 <pre><code>kubectl get deployment DEPLOYMENT_NAME -o yaml  
 kubectl get configmap CONFIGMAP_NAME -o yaml</code></pre>
