@@ -35,3 +35,8 @@ kubectl describe deployment DEPLOYMENT_NAME</code></pre>
 
 ## Access shell inside container
 <pre><code>kubectl exec -it POD_ID -n NAMESPACE -- /bin/sh</code></pre>
+
+## Delete resources
+<pre><code>kubectl delete pod POD_ID -n NAMESPACE  
+kubectl delete deployment DEPLOYMENT_NAME -n NAMESPACE  
+kubectl delete service SERVICE_NAME -n NAMESPACE</code></pre>
