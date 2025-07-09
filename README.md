@@ -137,6 +137,8 @@ helm install RELEASE_NAME CHART_NAME -f YAML_FILE --set KEY_1=VALUE_1</code></pr
 
 ## k8s tools
 * **[kubie](https://github.com/sbstp/kubie)** - switch between clusters and namespaces and show information in cli
+* **[k9s](https://github.com/derailed/k9s)** - Terminal UI to interact with your Kubernetes clusters
+* **[stern](https://github.com/stern/stern)** - Tail and follow multiple pods logs on Kubernetes and multiple containers within the pod
 
 ## Documentation
 [Official Kubernetes Docs](https://kubernetes.io/docs/)  
