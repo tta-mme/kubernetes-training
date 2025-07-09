@@ -86,7 +86,7 @@ helm repo update</code></pre>
 ### Show default values
 <pre><code>helm show values CHART</code></pre>
 
-### List helm releases
+### List deployed helm releases
 <pre><code>helm list</code></pre>
 
 ### Show release values
