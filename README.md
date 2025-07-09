@@ -65,7 +65,7 @@ kubectl create configmap CONFIGMAP_NAME --from-file=KEY_VAULE_FILE
 kubectl create secret generic SECRET_NAME --from-literal=KEY_1=VALUE_1 --from-literal=KEY_2=VALUE_2  
 kubectl create secret generic SECRET_NAME --from-env-file=KEY_VAULE_FILE</code></pre>
 
-### Create resources declarative
+### Create resources declaratively
 <pre><code>kubectl apply -f YAML_FILE  
 kubectl apply -f KUSTOMIZE_FILE</code></pre>
 
