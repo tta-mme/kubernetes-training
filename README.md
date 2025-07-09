@@ -47,14 +47,14 @@ kubectl logs POD_ID -f</code></pre>
 <pre><code>kubectl config set-context --current --namespace=NAMESPACE</code></pre>
 
 ### Execute command inside container (output will be written to local shell)
-<pre><code>kubectl exec -it POD_ID -n NAMESPACE -- /command/inside/container</code></pre>
+<pre><code>kubectl exec -it POD_ID -- /command/inside/container</code></pre>
 
 ### Access shell inside container
-<pre><code>kubectl exec -it POD_ID -n NAMESPACE -- /bin/sh</code></pre>
+<pre><code>kubectl exec -it POD_ID -- /bin/sh</code></pre>
 
 ### Port forwarding (local:remote)
-<pre><code>kubectl port-forward pod/POD_ID -n NAMESPACE 8080:80  
-kubectl port-forward service/SERVICE_NAME -n NAMESPACE 8080:80</code></pre>
+<pre><code>kubectl port-forward pod/POD_ID 8080:80  
+kubectl port-forward service/SERVICE_NAME 8080:80</code></pre>
 
 ### Create resources the imperative way
 <pre><code>kubectl run POD_NAME --image=IMAGE_NAME  
@@ -70,10 +70,10 @@ kubectl create secret generic SECRET_NAME --from-env-file=KEY_VAULE_FILE</code><
 kubectl apply -f KUSTOMIZE_FILE</code></pre>
 
 ### Delete resources
-<pre><code>kubectl delete pod POD_ID -n NAMESPACE  
-kubectl delete pod POD_ID -n NAMESPACE --grace-period 0 --force  
-kubectl delete deployment DEPLOYMENT_NAME -n NAMESPACE  
-kubectl delete service SERVICE_NAME -n NAMESPACE</code></pre>
+<pre><code>kubectl delete pod POD_ID  
+kubectl delete pod POD_ID --grace-period 0 --force  
+kubectl delete deployment DEPLOYMENT_NAME  
+kubectl delete service SERVICE_NAME</code></pre>
 
 ### List available API resources
 <pre><code>kubectl api-resources</code></pre>
