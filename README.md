@@ -61,7 +61,9 @@ kubectl create secret generic SECRET_NAME --from-literal=KEY_1=VALUE_1 --from-li
 kubectl create configmap CONFIGMAP_NAME --from-literal=KEY_1=VALUE_1 --from-literal=KEY_2=VALUE_2</code></pre>
 
 ## Create resources declarative
-<pre><code>kubectl apply -f YAML_FILE</code></pre>
+<pre><code>kubectl apply -f YAML_FILE  
+kubectl create configmap CONFIGMAP_NAME --from-file=KEY_VAULE_FILE  
+kubectl create secret generic SECRET_NAME --from-env-file=KEY_VAULE_FILE</code></pre>
 
 ## Delete resources
 <pre><code>kubectl delete pod POD_ID -n NAMESPACE  
