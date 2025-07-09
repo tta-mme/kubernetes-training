@@ -42,5 +42,5 @@ kubectl delete deployment DEPLOYMENT_NAME -n NAMESPACE
 kubectl delete service SERVICE_NAME -n NAMESPACE</code></pre>
 
 # Documentation
-[Visit Kubernetes Docs](https://kubernetes.io/docs/)
+[Visit Kubernetes Docs](https://kubernetes.io/docs/)  
 [Kubernetes cheat sheet](https://kubernetes.io/docs/reference/kubectl/quick-reference/)
