@@ -93,6 +93,6 @@ helm repo update</code></pre>
 <pre><code>helm get values RELEASE_NAME</code></pre>
 
 # Documentation
-[Visit Kubernetes Docs](https://kubernetes.io/docs/)  
+[Official Kubernetes Docs](https://kubernetes.io/docs/)  
 [Kubernetes cheat sheet](https://kubernetes.io/docs/reference/kubectl/quick-reference/)  
 [Helm command reference](https://helm.sh/docs/helm/)
