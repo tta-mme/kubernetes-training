@@ -110,6 +110,9 @@ kubectl delete service SERVICE_NAME -n NAMESPACE</code></pre>
 
 ## Helm
 
+### List available repos
+<pre><code>helm repo list</code></pre>
+
 ### Add helm repo
 <pre><code>helm repo add NAME URL  
 helm repo update</code></pre>
