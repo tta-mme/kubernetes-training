@@ -31,7 +31,7 @@ kubectl describe deployment DEPLOYMENT_NAME</code></pre>
 
 ## View logs
 <pre><code>kubectl logs POD_ID  
-kubectl logs POD_ID  CONTAINER_NAME
+kubectl logs POD_ID CONTAINER_NAME
 kubectl logs POD_ID --tail=10  
 kubectl logs POD_ID -f</code></pre>
 
