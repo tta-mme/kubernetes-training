@@ -123,6 +123,11 @@ helm repo update</code></pre>
 ### Show default values
 <pre><code>helm show values CHART_NAME</code></pre>
 
+### Deploy helm chart
+<pre><code>helm install RELEASE_NAME CHART_NAME --set KEY_1=VALUE_1 --set KEY_2=VALUE_2  
+helm install RELEASE_NAME CHART_NAME -f YAML_FILE  
+helm install RELEASE_NAME CHART_NAME -f YAML_FILE --set KEY_1=VALUE_1</code></pre>
+
 ### List deployed helm releases
 <pre><code>helm list</code></pre>
 
