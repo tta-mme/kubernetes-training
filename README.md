@@ -135,7 +135,10 @@ helm install RELEASE_NAME CHART_NAME -f YAML_FILE --set KEY_1=VALUE_1</code></pr
 ### Show release values
 <pre><code>helm get values RELEASE_NAME</code></pre>
 
-# Documentation
+## k8s tools
+* **[kubie](https://github.com/sbstp/kubie)** - switch between clusters and namespaces and show information in cli
+
+## Documentation
 [Official Kubernetes Docs](https://kubernetes.io/docs/)  
 [Kubernetes cheat sheet](https://kubernetes.io/docs/reference/kubectl/quick-reference/)  
 [Helm command reference](https://helm.sh/docs/helm/)
