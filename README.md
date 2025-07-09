@@ -57,6 +57,7 @@ kubectl port-forward service/SERVICE_NAME -n NAMESPACE 8080:80</code></pre>
 ## Create resources the imperative way
 <pre><code>kubectl run POD_NAME --image=IMAGE_NAME  
 kubectl create deployment DEPLOYMENT_NAME --image=IMAGE_NAME  
+kubectl expose deployment DEPLOYMENT_NAME --port=PORT_NUMBER
 kubectl create configmap CONFIGMAP_NAME --from-literal=KEY_1=VALUE_1 --from-literal=KEY_2=VALUE_2  
 kubectl create configmap CONFIGMAP_NAME --from-file=KEY_VAULE_FILE  
 kubectl create secret generic SECRET_NAME --from-literal=KEY_1=VALUE_1 --from-literal=KEY_2=VALUE_2  
