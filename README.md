@@ -17,6 +17,9 @@ kubectl get all</code></pre>
 kubectl get pods -n NAMESPACE -w  
 kubectl get deployments -n NAMESPACE</code></pre>
 
+## List resources from all namespaces
+<pre><code>kubectl get pods -A</code></pre>
+
 ## List resources with more details
 <pre><code>kubectl get nodes -o wide  
 kubectl get pods -o wide</code></pre>
