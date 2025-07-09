@@ -76,9 +76,23 @@ kubectl delete service SERVICE_NAME -n NAMESPACE</code></pre>
 
 ## Helm
 
-### List helm deployments
+### Add helm repo
+<pre><code>helm repo add NAME URL  
+helm repo update</code></pre>
+
+### Search charts in repo
+<pre><code>helm search repo CHART</code></pre>
+
+### Show default values
+<pre><code>helm show values CHART</code></pre>
+
+### List helm releases
 <pre><code>helm list</code></pre>
+
+### Show release values
+<pre><code>helm get values RELEASE_NAME</code></pre>
 
 # Documentation
 [Visit Kubernetes Docs](https://kubernetes.io/docs/)  
-[Kubernetes cheat sheet](https://kubernetes.io/docs/reference/kubectl/quick-reference/)
+[Kubernetes cheat sheet](https://kubernetes.io/docs/reference/kubectl/quick-reference/)  
+[Helm command reference](https://helm.sh/docs/helm/)
