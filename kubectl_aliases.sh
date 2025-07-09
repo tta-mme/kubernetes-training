@@ -16,3 +16,6 @@ alias ktop='watch -n 1 kubectl top pod --sort-by=cpu'
 
 krma() { kubectl get pods | grep "$1" | awk '{print $1}' | xargs kubectl delete pod; }
 krmaf() { kubectl get pods | grep "$1" | awk '{print $1}' | xargs kubectl delete pod --grace-period 0 --force; }
+
+export drc="--dry-run=client"
+export drs="--dry-run=server"
