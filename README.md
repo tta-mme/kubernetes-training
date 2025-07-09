@@ -46,6 +46,9 @@ kubectl logs POD_ID -f</code></pre>
 <pre><code>kubectl port-forward pod/POD_ID -n NAMESPACE 8080:80  
 kubectl port-forward service/SERVICE_NAME -n NAMESPACE 8080:80</code></pre>
 
+## Create resource from file (written in yaml)
+<pre><code>kubectl apply -f FILENAME</code></pre>
+
 ## Delete resources
 <pre><code>kubectl delete pod POD_ID -n NAMESPACE  
 kubectl delete pod POD_ID -n NAMESPACE --grace-period 0 --force  
