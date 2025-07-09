@@ -42,7 +42,7 @@ kubectl logs POD_ID -f</code></pre>
 ## Access shell inside container
 <pre><code>kubectl exec -it POD_ID -n NAMESPACE -- /bin/sh</code></pre>
 
-## Port forwarding
+## Port forwarding (local:remote)
 <pre><code>kubectl port-forward pod/POD_ID -n NAMESPACE 8080:80  
 kubectl port-forward service/SERVICE_NAME -n NAMESPACE 8080:80</code></pre>
 
