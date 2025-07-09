@@ -14,6 +14,7 @@ kubectl get all</code></pre>
 
 ## List resources in selected namespace
 <pre><code>kubectl get pods -n NAMESPACE  
+kubectl get pods -n NAMESPACE -w  
 kubectl get deployments -n NAMESPACE</code></pre>
 
 ## Output as yaml
@@ -23,6 +24,11 @@ kubectl get configmap CONFIGMAP_NAME -o yaml</code></pre>
 ## Describe resource
 <pre><code>kubectl describe pod POD_ID 
 kubectl describe deployment DEPLOYMENT_NAME</code></pre>
+
+## View logs
+<pre><code>kubectl logs POD_ID 
+kubectl logs POD_ID --tail=10  
+kubectl logs POD_ID -f</code></pre>
 
 ## Get current namespace
 <pre><code>kubectl config current-context</code></pre>
