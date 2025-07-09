@@ -74,6 +74,40 @@ kubectl delete pod POD_ID -n NAMESPACE --grace-period 0 --force
 kubectl delete deployment DEPLOYMENT_NAME -n NAMESPACE  
 kubectl delete service SERVICE_NAME -n NAMESPACE</code></pre>
 
+### List available API resources
+<pre><code>kubectl api-resources</code></pre>
+
+### Resource abbreviations
+| Resource                 | Abbreviation         |
+|--------------------------|----------------------|
+| Pod                      | po                   |
+| Service                  | svc                  |
+| Deployment               | deploy               |
+| ReplicaSet               | rs                   |
+| StatefulSet              | sts                  |
+| DaemonSet                | ds                   |
+| Job                      | job                  |
+| CronJob                  | cj                   |
+| ConfigMap                | cm                   |
+| Secret                   | secret               |
+| Namespace                | ns                   |
+| PersistentVolume         | pv                   |
+| PersistentVolumeClaim    | pvc                  |
+| Node                     | no                   |
+| Ingress                  | ing                  |
+| ServiceAccount           | sa                   |
+| NetworkPolicy            | netpol               |
+| ResourceQuota            | quota                |
+| HorizontalPodAutoscaler  | hpa                  |
+| ClusterRole              | clusterrole          |
+| ClusterRoleBinding       | clusterrolebinding   |
+| Role                     | role                 |
+| RoleBinding              | rolebinding          |
+| CustomResourceDefinition | crd                  |
+| Endpoint                 | ep                   |
+| Event                    | ev                   |
+| LimitRange               | limitrange           |
+
 ## Helm
 
 ### Add helm repo
