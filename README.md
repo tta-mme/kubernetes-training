@@ -16,6 +16,10 @@ kubectl get all</code></pre>
 <pre><code>kubectl get pods -n NAMESPACE  
 kubectl get deployments -n NAMESPACE</code></pre>
 
+## Output as yaml
+<pre><code>kubectl get deployment DEPLOYMENT_NAME -o yaml  
+kubectl get configmap CONFIGMAP_NAME -o yaml</code></pre>
+
 ## Describe resource
 <pre><code>kubectl describe pod POD_ID 
 kubectl describe deployment DEPLOYMENT_NAME</code></pre>
