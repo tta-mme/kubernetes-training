@@ -1,4 +1,4 @@
-# kubernetes-training
+# Kubernetes training
 
 ## List resources in current namespace
 <pre><code>kubectl get nodes  
@@ -40,3 +40,7 @@ kubectl describe deployment DEPLOYMENT_NAME</code></pre>
 <pre><code>kubectl delete pod POD_ID -n NAMESPACE  
 kubectl delete deployment DEPLOYMENT_NAME -n NAMESPACE  
 kubectl delete service SERVICE_NAME -n NAMESPACE</code></pre>
+
+# Documentation
+[Visit Kubernetes Docs](https://kubernetes.io/docs/)
+[Kubernetes cheat sheet](https://kubernetes.io/docs/reference/kubectl/quick-reference/)
