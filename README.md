@@ -13,18 +13,21 @@ kubectl get persistentvolumeclaims
 kubectl get all</code></pre>
 
 ## List resources in selected namespace
-<pre><code>kubectl get pods -n __namespace__  
-kubectl get deployments -n __namespace__</code></pre>
+<pre><code>kubectl get pods -n NAMESPACE  
+kubectl get deployments -n NAMESPACE</code></pre>
 
 ## Describe resource
-<pre><code>kubectl describe pod __pod-id__. 
-kubectl describe deployment __deployment-name__</code></pre>
+<pre><code>kubectl describe pod POD_ID 
+kubectl describe deployment DEPLOYMENT_NAME</code></pre>
+
+## Get current namespace
+<pre><code>kubectl config current-context</code></pre>
 
 ## Switch to selected namespace
-<pre><code>kubectl config set-context --current --namespace=__namespace__</code></pre>
+<pre><code>kubectl config set-context --current --namespace=NAMESPACE</code></pre>
 
 ## Execute command inside container (output will be written to local shell)
-<pre><code>kubectl exec -it __pod-id__ -n __namespace__ -- __/command/inside/container__</code></pre>
+<pre><code>kubectl exec -it POD_ID -n NAMESPACE -- /command/inside/container</code></pre>
 
 ## Access shell inside container
-<pre><code>kubectl exec -it __pod-id__ -n __namespace__ -- __/bin/sh__</code></pre>
+<pre><code>kubectl exec -it POD_ID -n NAMESPACE -- /bin/sh</code></pre>
