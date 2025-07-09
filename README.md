@@ -48,6 +48,7 @@ kubectl port-forward service/SERVICE_NAME -n NAMESPACE 8080:80</code></pre>
 
 ## Delete resources
 <pre><code>kubectl delete pod POD_ID -n NAMESPACE  
+kubectl delete pod POD_ID -n NAMESPACE --grace-period 0 --force  
 kubectl delete deployment DEPLOYMENT_NAME -n NAMESPACE  
 kubectl delete service SERVICE_NAME -n NAMESPACE</code></pre>
 
