@@ -1,6 +1,8 @@
 # Kubernetes training
 
-## List resources in current namespace
+## kubectl commands
+
+### List resources in current namespace
 <pre><code>kubectl get nodes  
 kubectl get namespaces  
 kubectl get pods  
@@ -12,49 +14,49 @@ kubectl get persistentvolumes
 kubectl get persistentvolumeclaims  
 kubectl get all</code></pre>
 
-## List resources in selected namespace
+### List resources in selected namespace
 <pre><code>kubectl get pods -n NAMESPACE  
 kubectl get pods -n NAMESPACE -w  
 kubectl get deployments -n NAMESPACE</code></pre>
 
-## List resources from all namespaces
+### List resources from all namespaces
 <pre><code>kubectl get pods -A</code></pre>
 
-## List resources with more details
+### List resources with more details
 <pre><code>kubectl get nodes -o wide  
 kubectl get pods -o wide</code></pre>
 
-## Output as yaml
+### Output as yaml
 <pre><code>kubectl get deployment DEPLOYMENT_NAME -o yaml  
 kubectl get configmap CONFIGMAP_NAME -o yaml</code></pre>
 
-## Describe resource
+### Describe resource
 <pre><code>kubectl describe pod POD_ID 
 kubectl describe deployment DEPLOYMENT_NAME</code></pre>
 
-## View logs
+### View logs
 <pre><code>kubectl logs POD_ID  
 kubectl logs POD_ID CONTAINER_NAME
 kubectl logs POD_ID --tail=10  
 kubectl logs POD_ID -f</code></pre>
 
-## Get current namespace
+### Get current namespace
 <pre><code>kubectl config current-context</code></pre>
 
-## Switch to selected namespace
+### Switch to selected namespace
 <pre><code>kubectl config set-context --current --namespace=NAMESPACE</code></pre>
 
-## Execute command inside container (output will be written to local shell)
+### Execute command inside container (output will be written to local shell)
 <pre><code>kubectl exec -it POD_ID -n NAMESPACE -- /command/inside/container</code></pre>
 
-## Access shell inside container
+### Access shell inside container
 <pre><code>kubectl exec -it POD_ID -n NAMESPACE -- /bin/sh</code></pre>
 
-## Port forwarding (local:remote)
+### Port forwarding (local:remote)
 <pre><code>kubectl port-forward pod/POD_ID -n NAMESPACE 8080:80  
 kubectl port-forward service/SERVICE_NAME -n NAMESPACE 8080:80</code></pre>
 
-## Create resources the imperative way
+### Create resources the imperative way
 <pre><code>kubectl run POD_NAME --image=IMAGE_NAME  
 kubectl create deployment DEPLOYMENT_NAME --image=IMAGE_NAME  
 kubectl expose deployment DEPLOYMENT_NAME --port=PORT_NUMBER
@@ -63,14 +65,19 @@ kubectl create configmap CONFIGMAP_NAME --from-file=KEY_VAULE_FILE
 kubectl create secret generic SECRET_NAME --from-literal=KEY_1=VALUE_1 --from-literal=KEY_2=VALUE_2  
 kubectl create secret generic SECRET_NAME --from-env-file=KEY_VAULE_FILE</code></pre>
 
-## Create resources declarative
+### Create resources declarative
 <pre><code>kubectl apply -f YAML_FILE</code></pre>
 
-## Delete resources
+### Delete resources
 <pre><code>kubectl delete pod POD_ID -n NAMESPACE  
 kubectl delete pod POD_ID -n NAMESPACE --grace-period 0 --force  
 kubectl delete deployment DEPLOYMENT_NAME -n NAMESPACE  
 kubectl delete service SERVICE_NAME -n NAMESPACE</code></pre>
+
+## Helm
+
+### List helm deployments
+<pre><code>helm list</code></pre>
 
 # Documentation
 [Visit Kubernetes Docs](https://kubernetes.io/docs/)  
