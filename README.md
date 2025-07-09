@@ -36,8 +36,9 @@ kubectl describe deployment DEPLOYMENT_NAME</code></pre>
 ## Access shell inside container
 <pre><code>kubectl exec -it POD_ID -n NAMESPACE -- /bin/sh</code></pre>
 
-## Forward local port to container port
-<pre><code>kubectl port-forward pod/POD_ID -n NAMESPACE</code></pre>
+## Port forwarding
+<pre><code>kubectl port-forward pod/POD_ID -n NAMESPACE 8080:80  
+kubectl port-forward service/SERVICE_NAME -n NAMESPACE 8080:80</code></pre>
 
 ## Delete resources
 <pre><code>kubectl delete pod POD_ID -n NAMESPACE  
