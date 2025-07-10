@@ -140,6 +140,7 @@ helm install RELEASE_NAME CHART_NAME -f YAML_FILE --set KEY_1=VALUE_1</code></pr
 * **[kubectx & kubens](https://github.com/ahmetb/kubectx)** - switch between clusters and namespaces
 * **[k9s](https://github.com/derailed/k9s)** - Terminal UI to interact with your Kubernetes clusters
 * **[stern](https://github.com/stern/stern)** - Tail and follow multiple pods logs on Kubernetes and multiple containers within the pod
+* **[LazyJournal](https://github.com/Lifailon/lazyjournal)** - Terminal user interface for reading logs from journald, auditd, file system, Docker containers, Podman and Kubernetes pods for quick viewing, coloring output and filtering with fuzzy find, regex support and timestamp.
 
 ## Documentation
 [Official Kubernetes Docs](https://kubernetes.io/docs/)  
