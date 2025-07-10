@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: colorful-nginx
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: colorful-nginx
