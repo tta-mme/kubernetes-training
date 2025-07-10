@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: colorful-nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: colorful-nginx
+  template:
+    metadata:
+      labels:
+        app: colorful-nginx
+    spec:
+      containers:
+        - name: colorful-nginx
+          image: nginx
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: color
+                    operator: In
+                    values:
+                      - yellow
