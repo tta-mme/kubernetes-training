@@ -15,8 +15,4 @@ data:
     </html>
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2025-07-23T07:27:08Z"
   name: nginx-index
-  namespace: schulung31work
-  resourceVersion: "101393271"
-  uid: cf7341b5-893d-453e-88a1-b4816d185da2
