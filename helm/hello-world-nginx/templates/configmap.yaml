@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}
+data:
+  index.html: |-
+    <!-- index.html -->
+    <html>
+
+    <head>
+        <title>Custom NGINX Seite</title>
+    </head>
+
+    <body>
+        <h1>Hello world from NGINX & ConfigMap!</h1>
+    </body>
+
+    </html>
