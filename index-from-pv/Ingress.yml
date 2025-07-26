@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: computer.local
+      http:
+        paths:
+          - backend:
+              service:
+                name: nginx-index-cm
+                port:
+                  number: 5000
+            path: /
+            pathType: Prefix
