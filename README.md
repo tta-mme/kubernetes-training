@@ -148,9 +148,10 @@ helm install RELEASE_NAME CHART_NAME -f YAML_FILE --set KEY_1=VALUE_1</code></pr
 [Kubernetes cheat sheet](https://kubernetes.io/docs/reference/kubectl/quick-reference/)  
 [Helm command reference](https://helm.sh/docs/helm/)
 
-##Links##
+## Links
 
 **kubectl on Windows:**
+
 https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
 
 **OC Client Installation:**
