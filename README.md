@@ -147,3 +147,32 @@ helm install RELEASE_NAME CHART_NAME -f YAML_FILE --set KEY_1=VALUE_1</code></pr
 [Official Kubernetes Docs](https://kubernetes.io/docs/)  
 [Kubernetes cheat sheet](https://kubernetes.io/docs/reference/kubectl/quick-reference/)  
 [Helm command reference](https://helm.sh/docs/helm/)
+
+##Links##
+
+**kubectl on Windows:**
+https://kubernetes.io/docs/tasks/tools/install-kubectl-windows/
+
+**OC Client Installation:**
+
+https://docs.okd.io/4.19/cli_reference/openshift_cli/getting-started-cli.html
+
+**Helm releases:**
+
+https://github.com/helm/helm/releases
+
+**Git Repo Training:**
+
+https://github.com/tta-mme/kubernetes-training
+
+**Repo mit Übungen:**
+
+https://github.com/kastl-ars/kubernetes-training
+
+**NGINX Image (unprivileged):** 
+
+quay.io/packit/nginx-unprivileged:latest
+
+**Bitnami repo**
+
+helm repo add bitnami https://charts.bitnami.com/bitnami
